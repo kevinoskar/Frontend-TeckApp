@@ -297,6 +297,6 @@ function login() {
 
 function createCookie(user) {
   document.cookie = `key=${user.key}; expires=Thu, 01 May 2021 12:00:00 UTC; path=/`;
-  document.cookie = `name=${user.name}; expires=Thu, 01 May 2021 12:00:00 UTC; path=/`;
+  document.cookie = `email=${user.email}; expires=Thu, 01 May 2021 12:00:00 UTC; path=/`;
   document.cookie = `token=${user.token}; expires=Thu, 01 May 2021 12:00:00 UTC; path=/`;
 }
