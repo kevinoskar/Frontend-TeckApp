@@ -15,13 +15,13 @@
         preloader.remove()
       });
     }
-
+    
 
     let urlParams = new URLSearchParams(window.location.search);
     let userId = urlParams.get('key');
     console.log(userId);
     $.ajax({
-        url: 'https://backendteckapp.herokuapp.com/ajax/ajax-users.php?id=' + userId,
+        url: './../Backend-TeckApp/ajax/ajax-users.php?id=' + userId,
         method: 'GET',
         dataType: 'json',
         success: function (res) {
@@ -48,7 +48,7 @@ function logout() {
         dataType: 'json',
         success: function (res) {
             console.log(res);
-            window.location = './index.html'
+            window.location = './index.php'
         },
         error: function (error) {
             console.error(error);
