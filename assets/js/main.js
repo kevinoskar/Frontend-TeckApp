@@ -256,7 +256,7 @@ function register() {
   let parametros = $('#register').serialize();
   console.log(parametros);
   $.ajax({
-    url: 'https://teckapp.herokuapp.com/ajax/ajax-users.php',
+    url: 'https://backendteckapp.herokuapp.com/ajax/ajax-users.php',
     method: 'POST',
     data: parametros,
     dataType: 'json',
@@ -277,7 +277,7 @@ function login() {
   let parametros = $('#login').serialize();
   console.log(parametros);
   $.ajax({
-    url: 'https://teckapp.herokuapp.com/ajax/ajax-users.php?action=login',
+    url: 'https://backendteckapp.herokuapp.com/ajax/ajax-users.php?action=login',
     method: 'POST',
     data: parametros,
     dataType: 'json',

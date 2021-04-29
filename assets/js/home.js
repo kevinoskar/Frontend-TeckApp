@@ -21,7 +21,7 @@
     let userId = urlParams.get('key');
     console.log(userId);
     $.ajax({
-        url: './../Backend-TeckApp/ajax/ajax-users.php?id=' + userId,
+        url: 'https://backendteckapp.herokuapp.com/ajax/ajax-users.php?id=' + userId,
         method: 'GET',
         dataType: 'json',
         success: function (res) {
@@ -43,7 +43,7 @@ function printData(user) {
 function logout() {
     document.getElementById("header").classList.add("aos-animate");
     $.ajax({
-        url: './../Backend-TeckApp/ajax/ajax-users.php?logout',
+        url: 'https://backendteckapp.herokuapp.com/ajax/ajax-users.php?logout',
         method: 'GET',
         dataType: 'json',
         success: function (res) {
