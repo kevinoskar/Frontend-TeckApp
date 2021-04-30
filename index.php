@@ -48,7 +48,7 @@
           <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
           <li><a class="nav-link   scrollto" href="#portfolio">Repuestos</a></li>
           <li><a class="nav-link scrollto" href="#team">Nuestro Equipo</a></li>
-          <li><a class="nav-link scrollto" href="./login.html">Iniciar Sesion</a></li>
+          <li><a class="nav-link scrollto" href="./login.php">Iniciar Sesion</a></li>
           <li><a class="getstarted scrollto" href="https://forms.gle/ptnSiuJvzmFaK5EV9">Registro Colaborador</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

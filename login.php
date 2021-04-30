@@ -94,6 +94,8 @@
             <input class="form-control" name="email"  type="email" placeholder="@Email">
             <h2 style="margin-bottom: 15px;">Contraseña</h2>
             <input class="form-control" name="password" type="password">
+            <h2 style="margin-bottom: 15px;">URL de Perfil</h2>
+            <input class="form-control" name="urlImageProfile" id="urlImageProfile" type="url">
             <div class="text-center"><button style="margin-top: 20px;" class="btn btn-primary" type="button" onclick="register()">Registrarse</button></div>
           </form>
         </div>
