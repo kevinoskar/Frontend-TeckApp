@@ -65,18 +65,58 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>La Mejor Solución </h1>
-          <h1>Para Tu Negocio</h1>
-          <h2>Contrata en linea a los mejores tecnicos en computadoras para ayudarte en cualquier trabajo.</h2>
+        <h5 style="text-align: center; color: #fff; font-weight: bold; font-size: 25px;">Te mostramos algunos trabajos en proceso</h5>
+        <div class="col-sm">
+          <div class="card" style="width: 19rem; height: 23rem;">
+            <img src="assets/img/mantenimiento.jpg" class="card-img-top" style="padding: 10px; width: 300px; height: 200px;">
+            <div class="card-body">
+            <h5 class="card-title">Mantenimiento de PC</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h6 class="card-subtitle mb-2 text-muted">Usuario: Francia Avila</h6>
+          </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+      </div>
+        <div class="col-sm"">
+          <div class="card" style="width: 19rem; height: 23rem;">
+            <img src="assets/img/teclado.jpg" class="card-img-top" style="padding: 10px; width: 300px; height: 200px;">
+            <div class="card-body">
+            <h5 class="card-title">Reparacion de Teclado</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h6 class="card-subtitle mb-2 text-muted">Usuario: Francia Avila</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm"">
+          <div class="card" style="width: 19rem; height: 23rem;">
+            <img src="assets/img/redes.jpg" class="card-img-top" style="padding: 10px; width: 300px; height: 200px;">
+            <div class="card-body">
+            <h5 class="card-title">Instalacion de una red local</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h6 class="card-subtitle mb-2 text-muted">Usuario: Francia Avila</h6>
+          </div>
+        </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main"><br>
+    <div class="container">
+      <h2>Cuentanos que clase de trabajo necesitas</h2>
+      <div class="row" style="border-radius:10px; border-color:#37517e; border-style: solid; padding: 15px">
+        <div class="col-sm">
+          <label for="exampleFormControlInput1" class="form-label">Agrega el nombre de tu trabajo</label>
+          <input type="name" class="form-control" placeholder="Por ejemplo: mantenimiento"> <br>
+          <label for="exampleFormControlTextarea1" class="form-label">Agrega una descripcion de tu trabajo</label>
+          <textarea class="form-control" rows="4"></textarea>
+        </div>
+        <div class="col-sm"">
+          <label for="exampleFormControlInput1" class="form-label">Agrega una imagen de ultilidad para explicar tu trabajo</label>
+          <input type="imagen" class="form-control">
+          <button type="button" class="btn btn-success" style="margin-left:200px; margin-top:40px;">Enviar Trabajo</button>
         </div>
       </div>
     </div>
+  </main>
 
-  </section><!-- End Hero -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
