@@ -1,7 +1,7 @@
 <?php
-    if(!isset($_COOKIE['key'])){
-      header("Location: https://teckapp.herokuapp.com/");
-    }
+if (!isset($_COOKIE['key'])) {
+  header("Location: https://teckapp.herokuapp.com/");
+}
 ?>
 
 <!DOCTYPE html>
@@ -66,38 +66,9 @@
   <section id="hero" class="d-flex align-items-center">
 
     <div class="container">
-      <div class="row">
-        <h5 style="text-align: center; color: #fff; font-weight: bold; font-size: 25px;">Te mostramos algunos trabajos en proceso</h5>
-        <div class="col-sm">
-          <div class="card" style="width: 19rem; height: 23rem;">
-            <img src="assets/img/mantenimiento.jpg" class="card-img-top" style="padding: 10px; width: 300px; height: 200px;">
-            <div class="card-body">
-            <h5 class="card-title">Mantenimiento de PC</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <h6 class="card-subtitle mb-2 text-muted">Usuario: Francia Avila</h6>
-          </div>
-        </div>
+      <h5 style="text-align: center; color: #fff; font-weight: bold; font-size: 25px;">Te mostramos algunos trabajos en proceso</h5>
+      <div class="row" id="job-view">
       </div>
-        <div class="col-sm"">
-          <div class="card" style="width: 19rem; height: 23rem;">
-            <img src="assets/img/teclado.jpg" class="card-img-top" style="padding: 10px; width: 300px; height: 200px;">
-            <div class="card-body">
-            <h5 class="card-title">Reparacion de Teclado</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <h6 class="card-subtitle mb-2 text-muted">Usuario: Francia Avila</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm"">
-          <div class="card" style="width: 19rem; height: 23rem;">
-            <img src="assets/img/redes.jpg" class="card-img-top" style="padding: 10px; width: 300px; height: 200px;">
-            <div class="card-body">
-            <h5 class="card-title">Instalacion de una red local</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <h6 class="card-subtitle mb-2 text-muted">Usuario: Francia Avila</h6>
-          </div>
-        </div>
-    </div>
   </section><!-- End Hero -->
 
   <main id="main"><br>
@@ -105,15 +76,17 @@
       <h2>Cuentanos que clase de trabajo necesitas</h2>
       <div class="row" style="border-radius:10px; border-color:#37517e; border-style: solid; padding: 15px">
         <div class="col-sm">
-          <label for="exampleFormControlInput1" class="form-label">Agrega el nombre de tu trabajo</label>
-          <input type="name" class="form-control" placeholder="Por ejemplo: mantenimiento"> <br>
-          <label for="exampleFormControlTextarea1" class="form-label">Agrega una descripcion de tu trabajo</label>
-          <textarea class="form-control" rows="4"></textarea>
+          <form id="job-form">
+            <label for="exampleFormControlInput1" class="form-label">Agrega el nombre de tu trabajo</label>
+            <input name="name" type="name" class="form-control" placeholder="Por ejemplo: mantenimiento"> <br>
+            <label for="exampleFormControlTextarea1" class="form-label">Agrega una descripcion de tu trabajo</label>
+            <textarea name="description" class="form-control" rows="4"></textarea>
         </div>
         <div class="col-sm"">
-          <label for="exampleFormControlInput1" class="form-label">Agrega una imagen de ultilidad para explicar tu trabajo</label>
-          <input type="imagen" class="form-control">
-          <button type="button" class="btn btn-success" style="margin-left:200px; margin-top:40px;">Enviar Trabajo</button>
+          <label for=" exampleFormControlInput1" class="form-label">Agrega una imagen de ultilidad para explicar tu trabajo</label>
+          <input type="text" name="urlImage" class="form-control">
+          <button type="button" class="btn btn-success" style="margin-left:200px; margin-top:40px;" onclick="createJob()">Enviar Trabajo</button>
+          </form>
         </div>
       </div>
     </div>
