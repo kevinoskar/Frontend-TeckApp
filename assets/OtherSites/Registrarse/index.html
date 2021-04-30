@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SING IN</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+
+
+
+<!-- Favicon -->
+<link href="images/icon/icons8-motor-de-papel-tapiz-64.png" rel="icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+<!-- CSS Libraries -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+<link href="../../lib/slick/slick.css" rel="stylesheet">
+<link href="../../lib/slick/slick-theme.css" rel="stylesheet">
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form id="register" action="register" class="contact100-form validate-form">
+				<a href="../../index.html" class="button scrolly">Regresar</a>
+				<span class="contact100-form-title">
+					Registrarse 
+				</span>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<label class="label-input100" for="name">Nombre Completo</label>
+					<input id="nameUser" class="input100" type="text" name="name" placeholder="Enter your name...">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<label class="label-input100" for="email">Email Address</label>
+					<input id="email" class="input100" type="text" name="email" placeholder="Enter your email...">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate = "Password is required">
+					<label class="label-input100" for="password">Contraseña</label>
+					<input id="passwordI" onchange="HabilitarPassword()" class="input100" type="password" name="password" placeholder="password">
+					<span class="focus-input100"></span>
+					<a href=""></i></a>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate = "Password is required">
+					<label class="label-input100" for="password">confirme Contraseña</label>
+					<input id="passwordII" onchange="HabilitarPassword()" class="input100" type="password" placeholder="password">
+					<span class="focus-input100"></span>
+				</div>
+				<div>
+					<button type="button" id="buttonPassword1" onclick="Passwordvalidet(1)" style=" margin-left: auto; display: block; "><i class="col-2 fa fa-eye"></i></button>
+					<button type="button" id="buttonPassword2" onclick="Passwordvalidet(2)" style=" margin-left: auto; display: none; "><i class="col-2 fa fa-eye-slash" aria-hidden="true"></i></button>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate = "Description is required">
+					<label class="label-input100" for="urlImageProfile">URL de perfil</label>
+					<input class="input100" name="urlImageProfile" id="urlImageProfile" type="url">
+					<!--textarea id="message" class="input100" name="message" placeholder="Write your description here, for your profile wall"></textarea-->
+					<span class="focus-input100"></span>
+				</div>
+				<div class="container-contact100-form-btn">
+					<input  onclick="register()" class="contact100-form-btn" id="SendNewUser" type="button" value="Enviar">
+				</div>
+			</form>
+
+			<div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+<!--===============================================================================================-->
+	<script src="../../jquery/jquery-3.6.0.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../../vendor/bootstrap/js/popper.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<!--script src="../../vendor/select2/select2.min.js"></script-->
+	<!--script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+		$(".js-select2").each(function(){
+			$(this).on('select2:open', function (e){
+				$(this).parent().next().addClass('eff-focus-selection');
+			});
+		});
+		$(".js-select2").each(function(){
+			$(this).on('select2:close', function (e){
+				$(this).parent().next().removeClass('eff-focus-selection');
+			});
+		});
+
+	</script-->
+<!--===============================================================================================-->
+	<script src="../../vendor/daterangepicker/moment.min.js"></script>
+	<script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<!--script src="../../vendor/countdowntime/countdowntime.js"></script-->
+<!--===============================================================================================-->
+	<!--script src="../../js/main2.js"></script-->
+	<script src="../../js/main.js"></script>
+	<script src="../../js/controlador.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+</body>
+</html>

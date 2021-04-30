@@ -263,7 +263,7 @@ function register() {
     success: function (res) {
       console.log(res);
       if (res.valid == "true") {
-        window.location = './home.php?key=' + res.key;
+        window.location = '../../../home.php?key=' + res.key;
       }
     },
     error: function (error) {
@@ -274,9 +274,10 @@ function register() {
 
 // Login Form AJAX
 
-function login() {
+function login21() {
   let parametros = $('#login').serialize();
   console.log(parametros);
+  console.log("entro");
   $.ajax({
     url: 'https://backendteckapp.herokuapp.com/ajax/ajax-users.php?action=login',
     method: 'POST',
@@ -286,7 +287,12 @@ function login() {
       console.log(res);
       if (res.valid == true) {
         createCookie(res);
-        window.location = './home.php?key=' + res.key;
+        window.location = '../../../home.php?key=' + res.key;
+      };
+      if(res.valid == "false"){
+        $('#UserFalse').html($(`
+          <h4>Usuario no encontrado</h4>
+        `));
       }
     },
     error: (error) => {
