@@ -51,7 +51,6 @@ if (!isset($_COOKIE['key'])) {
         <ul>
           <li><a class="nav-link scrollto" href="#about">Acerca de Nosotros</a></li>
           <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Repuestos</a></li>
           <li><a class="nav-link scrollto" href="#team">Nuestro Equipo</a></li>
           <li id="user-name"></li>
           <li><a class="getstarted scrollto" style="cursor: pointer; height: 55px;" onclick="logout()">Log Out</a></li>
@@ -77,15 +76,15 @@ if (!isset($_COOKIE['key'])) {
       <h2>Cuentanos que clase de trabajo necesitas</h2>
       <div class="row" style="border-radius:10px; border-color:#37517e; border-style: solid; padding: 15px">
         <div class="col-sm">
-          <form id="job-form">
+          <form id="job-form" style="font-weight: bold;">
             <label for="exampleFormControlInput1" class="form-label">Agrega el nombre de tu trabajo</label>
             <input name="name" id="name-job" type="name" class="form-control" placeholder="Por ejemplo: mantenimiento"> <br>
             <label for="exampleFormControlTextarea1" class="form-label">Agrega una descripcion de tu trabajo</label>
             <textarea name="description" class="form-control" rows="4"></textarea>
         </div>
-        <div class="col-sm"">
+        <div class="col-sm" style="font-weight: bold;">
           <label for=" exampleFormControlInput1" class="form-label">Agrega una imagen de ultilidad para explicar tu trabajo</label>
-          <input type="text" id="urlImage" name="urlImage" class="form-control">
+          <input type="text" id="urlImage" name="urlImage" class="form-control" placeholder="Agrega la URL de una imagen">
           <button type="button" class="btn btn-success" style="margin-left:200px; margin-top:40px;" onclick="createJob()">Enviar Trabajo</button>
           <div style="text-align: center" id="btn-create"></div>  
         </form>

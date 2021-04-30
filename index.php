@@ -45,7 +45,6 @@
         <ul>
           <a class="nav-link scrollto" href="#about">Acerca de Nosotros</a></>
           <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Repuestos</a></li>
           <li><a class="nav-link scrollto" href="#team">Nuestro Equipo</a></li>
           <li><a class="nav-link scrollto" href="assets/OtherSites/iniciarsesion/index.html">Iniciar Sesion</a></li>
           <li><a class="nav-link scrollto" href="assets/OtherSites/Registrarse/index.html">Registrate</a></li>
