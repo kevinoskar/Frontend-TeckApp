@@ -54,7 +54,7 @@ if (!isset($_COOKIE['key'])) {
           <li><a class="nav-link scrollto" href="#portfolio">Repuestos</a></li>
           <li><a class="nav-link scrollto" href="#team">Nuestro Equipo</a></li>
           <li id="user-name"></li>
-          <li><a class="getstarted scrollto" style="cursor: pointer" onclick="logout()">Log Out</a></li>
+          <li><a class="getstarted scrollto" style="cursor: pointer; height: 55px;" onclick="logout()">Log Out</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -63,11 +63,12 @@ if (!isset($_COOKIE['key'])) {
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" style="height: auto;" class="d-flex align-items-center">
 
     <div class="container">
       <h5 style="text-align: center; color: #fff; font-weight: bold; font-size: 25px;">Te mostramos algunos trabajos en proceso</h5>
       <div class="row" id="job-view">
+        
       </div>
   </section><!-- End Hero -->
 
@@ -78,15 +79,16 @@ if (!isset($_COOKIE['key'])) {
         <div class="col-sm">
           <form id="job-form">
             <label for="exampleFormControlInput1" class="form-label">Agrega el nombre de tu trabajo</label>
-            <input name="name" type="name" class="form-control" placeholder="Por ejemplo: mantenimiento"> <br>
+            <input name="name" id="name-job" type="name" class="form-control" placeholder="Por ejemplo: mantenimiento"> <br>
             <label for="exampleFormControlTextarea1" class="form-label">Agrega una descripcion de tu trabajo</label>
             <textarea name="description" class="form-control" rows="4"></textarea>
         </div>
         <div class="col-sm"">
           <label for=" exampleFormControlInput1" class="form-label">Agrega una imagen de ultilidad para explicar tu trabajo</label>
-          <input type="text" name="urlImage" class="form-control">
+          <input type="text" id="urlImage" name="urlImage" class="form-control">
           <button type="button" class="btn btn-success" style="margin-left:200px; margin-top:40px;" onclick="createJob()">Enviar Trabajo</button>
-          </form>
+          <div style="text-align: center" id="btn-create"></div>  
+        </form>
         </div>
       </div>
     </div>
