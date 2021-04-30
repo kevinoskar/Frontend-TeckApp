@@ -66,7 +66,7 @@ if (!isset($_COOKIE['key'])) {
   <section id="hero" style="height: auto;" class="d-flex align-items-center">
 
     <div class="container">
-      <h5 style="text-align: center; color: #fff; font-weight: bold; font-size: 25px;">Te mostramos algunos trabajos en proceso</h5>
+      <h5 style="text-align: center; color: #fff; font-weight: bold; font-size: 25px; margin-bottom: 40px;">Te mostramos algunos trabajos en proceso</h5>
       <div class="row" id="job-view">
         
       </div>
