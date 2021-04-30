@@ -1,5 +1,7 @@
 <?php
- 
+    if(!isset($_COOKIE['key'])){
+      header("Location: https://teckapp.herokuapp.com/");
+    }
 ?>
 
 <!DOCTYPE html>

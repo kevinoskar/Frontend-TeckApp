@@ -273,6 +273,7 @@ function register() {
 };
 
 // Login Form AJAX
+
 function login() {
   let parametros = $('#login').serialize();
   console.log(parametros);
@@ -284,6 +285,7 @@ function login() {
     success: (res) => {
       console.log(res);
       if (res.valid == true) {
+        createCookie(res);
         window.location = './home.php?key=' + res.key;
       }
     },
@@ -291,4 +293,10 @@ function login() {
       console.log(error);
     }
   });
+}
+
+function createCookie(user) {
+  document.cookie = `key=${user.key}; expires=Thu, 01 May 2021 12:00:00 UTC; path=/`;
+  document.cookie = `email=${user.email}; expires=Thu, 01 May 2021 12:00:00 UTC; path=/`;
+  document.cookie = `token=${user.token}; expires=Thu, 01 May 2021 12:00:00 UTC; path=/`;
 }
