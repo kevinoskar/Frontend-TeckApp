@@ -46,29 +46,28 @@
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<form id="register" action="register" class="contact100-form validate-form">
-				<a href="../../../index.php" class="button scrolly">Regresar</a>
-				<span class="contact100-form-title">
-					Registrarse 
-				</span>
+				<a href="../../../index.php" style="text-decoration: none;">
+					<h2 style=" color: rgb(15, 15, 15); margin-left: 90px; margin-bottom: 20px; ">TeckApp Registro</h2>
+				</a>
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
 					<label class="label-input100" for="name">Nombre Completo</label>
-					<input id="nameUser" class="input100" type="text" name="name" placeholder="Enter your name...">
+					<input id="nameUser" class="input100" type="text" name="name" placeholder="Ingresa tu nombre">
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 					<label class="label-input100" for="email">Email Address</label>
-					<input id="email" class="input100" type="text" name="email" placeholder="Enter your email...">
+					<input id="email" class="input100" type="text" name="email" placeholder="Ingresa tu correo">
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 validate-input" data-validate = "Password is required">
 					<label class="label-input100" for="password">Contraseña</label>
-					<input id="passwordI" onchange="HabilitarPassword()" class="input100" type="password" name="password" placeholder="password">
+					<input id="passwordI" onchange="HabilitarPassword()" class="input100" type="password" name="password" placeholder="Ingresa tu contraseña">
 					<span class="focus-input100"></span>
 					<a href=""></i></a>
 				</div>
 				<div class="wrap-input100 validate-input" data-validate = "Password is required">
 					<label class="label-input100" for="password">confirme Contraseña</label>
-					<input id="passwordII" onchange="HabilitarPassword()" class="input100" type="password" placeholder="password">
+					<input id="passwordII" onchange="HabilitarPassword()" class="input100" type="password" placeholder="Confirma tu contraseña">
 					<span class="focus-input100"></span>
 				</div>
 				<div>
@@ -76,13 +75,13 @@
 					<button type="button" id="buttonPassword2" onclick="Passwordvalidet(2)" style=" margin-left: auto; display: none; "><i class="col-2 fa fa-eye-slash" aria-hidden="true"></i></button>
 				</div>
 				<div class="wrap-input100 validate-input" data-validate = "Description is required">
-					<label class="label-input100" for="urlImageProfile">URL de perfil</label>
-					<input class="input100" name="urlImageProfile" id="urlImageProfile" type="url">
+					<label class="label-input100" for="urlImageProfile"></label>Imagen de perfil</label>
+					<input class="input100" name="urlImageProfile" id="urlImageProfile" type="url"  placeholder="Agrega una URL de la imagen">
 					<!--textarea id="message" class="input100" name="message" placeholder="Write your description here, for your profile wall"></textarea-->
 					<span class="focus-input100"></span>
 				</div>
 				<div class="container-contact100-form-btn">
-					<input  onclick="register()" class="contact100-form-btn" id="SendNewUser" type="button" value="Enviar">
+					<input  onclick="register()" class="contact100-form-btn" id="SendNewUser" type="button" value="Registrarme">
 				</div>
 			</form>
 
