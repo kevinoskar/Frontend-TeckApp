@@ -45,7 +45,6 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="./index.php">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Acerca de Nosotros</a></li>
           <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
           <li><a class="nav-link   scrollto" href="#portfolio">Repuestos</a></li>

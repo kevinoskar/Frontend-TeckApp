@@ -43,8 +43,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="./">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Acerca de Nosotros</a></li>
+          <a class="nav-link scrollto" href="#about">Acerca de Nosotros</a></>
           <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
           <li><a class="nav-link   scrollto" href="#portfolio">Repuestos</a></li>
           <li><a class="nav-link scrollto" href="#team">Nuestro Equipo</a></li>
