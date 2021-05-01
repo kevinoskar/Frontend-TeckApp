@@ -58,9 +58,9 @@
 
 function logout() {
   document.getElementById("header").classList.add("aos-animate");
-  document.cookie = `key=''; expires=''; path=/`;
-  document.cookie = `email=''; expires=''; path=/`;
-  document.cookie = `token=''; expires=''; path=/`;
+  document.cookie = `key=''; max-age=0; path=/`;
+  document.cookie = `email=''; max-age=0; path=/`;
+  document.cookie = `token=''; max-age=0; path=/`;
   window.location = './'
 
 }

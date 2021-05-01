@@ -303,7 +303,7 @@ function login21() {
 }
 
 function createCookie(user) {
-  document.cookie = `key=${user.key}; expires=Thu, 01 May 2021 12:00:00 UTC; path=/`;
-  document.cookie = `email=${user.email}; expires=Thu, 01 May 2021 12:00:00 UTC; path=/`;
-  document.cookie = `token=${user.token}; expires=Thu, 01 May 2021 12:00:00 UTC; path=/`;
+  document.cookie = `key=${user.key}; max-age=10800; path=/`;
+  document.cookie = `email=${user.email}; max-age=10800; path=/`;
+  document.cookie = `token=${user.token}; max-age=10800; path=/`;
 }
